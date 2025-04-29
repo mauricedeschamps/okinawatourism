@@ -42,6 +42,9 @@
             background-color: var(--bg-color);
             color: var(--text-color);
             transition: all 0.3s ease;
+            display: flex;
+            flex-direction: column;
+            min-height: 100vh;
         }
         
         .container {
@@ -51,6 +54,7 @@
             padding: 25px;
             border-radius: 12px;
             box-shadow: 0 4px 12px rgba(0,0,0,0.1);
+            flex: 1;
         }
         
         h1 {
@@ -285,6 +289,24 @@
             border-left: 3px solid var(--primary-color);
         }
         
+        footer {
+            text-align: center;
+            margin-top: 30px;
+            padding: 20px;
+            color: var(--text-color);
+            opacity: 0.8;
+            font-size: 0.9em;
+        }
+        
+        footer a {
+            color: var(--primary-color);
+            text-decoration: none;
+        }
+        
+        footer a:hover {
+            text-decoration: underline;
+        }
+        
         @media (max-width: 768px) {
             .container {
                 padding: 15px;
@@ -347,9 +369,9 @@
                 <span class="english">Motobu</span>
                 <span class="japanese">本部半島</span>
             </div>
-            <div class="area area-3" onclick="showAreaInfo('north-central')">
-                <span class="english">North-Central</span>
-                <span class="japanese">北中部</span>
+            <div class="area area-3" onclick="showAreaInfo('north-resorts')">
+                <span class="english">North Resorts</span>
+                <span class="japanese">北部リゾート</span>
             </div>
             <div class="area area-4" onclick="showAreaInfo('central')">
                 <span class="english">Central</span>
@@ -370,6 +392,11 @@
             <div class="japanese">エリアをクリックすると情報が表示されます</div>
         </div>
     </div>
+
+    <footer>
+        <div class="english">Contact me<br><a href="mailto:mementomorikatsu@gmail.com">mementomorikatsu@gmail.com</a></div>
+        <div class="japanese">連絡先<br><a href="mailto:mementomorikatsu@gmail.com">mementomorikatsu@gmail.com</a></div>
+    </footer>
 
     <script>
         // Area information in both languages
@@ -398,13 +425,13 @@
                 spots: ['churaumi-aquarium', 'kouri-island', 'bise-fukugi', 'nago-pineapple-park'],
                 image: "https://images.unsplash.com/photo-1566423479211-1b1bb46d559b?ixlib=rb-1.2.1&auto=format&fit=crop&w=800&q=80"
             },
-            'north-central': {
+            'north-resorts': {
                 en: {
-                    title: "North-Central Region",
+                    title: "North Resorts",
                     description: "Known for luxury resorts, beautiful coral reefs, and excellent snorkeling spots. The perfect area for a relaxing beach vacation with high-end amenities."
                 },
                 ja: {
-                    title: "北中部（読谷村・恩納村）",
+                    title: "北部リゾート（読谷村・恩納村）",
                     description: "高級リゾート、美しいサンゴ礁、素晴らしいシュノーケリングスポットで知られています。高級施設を備えたリラックスできるビーチバケーションに最適なエリアです。"
                 },
                 spots: ['manza-beach', 'busena-marine-park', 'zampa-misaki', 'american-village'],
