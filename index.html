@@ -4,6 +4,10 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Okinawa Travel Guide</title>
+    <!-- ホーム画面アイコン用メタタグ -->
+    <link rel="apple-touch-icon" href="data:image/svg+xml,<svg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 100 100'><rect width='100' height='100' fill='%230066cc'/><path d='M50 10L60 30L80 35L65 50L70 70L50 60L30 70L35 50L20 35L40 30Z' fill='white'/></svg>">
+    <meta name="apple-mobile-web-app-capable" content="yes">
+    <meta name="apple-mobile-web-app-status-bar-style" content="black-translucent">
     <style>
         :root {
             --bg-color: #ffffff;
@@ -410,7 +414,8 @@
                     title: "ヤンバル地域（国頭村・東村）",
                     description: "沖縄北部のジャングル地帯で、豊かな生物多様性と美しい自然スポットで知られています。手つかずの森、滝、風光明媚な岬を探索しましょう。"
                 },
-                spots: ['cape-hedo', 'taa-falls', 'daisekirinzan', 'yambaru-wildlife'],
+                // 辺戸岬 → 大石林山 → ター滝 → やんばる野生生物
+                spots: ['cape-hedo', 'daisekirinzan', 'taa-falls', 'yambaru-wildlife'],
                 image: "https://images.unsplash.com/photo-1621570351214-9b612c1a8d6f?ixlib=rb-1.2.1&auto=format&fit=crop&w=800&q=80"
             },
             'motobu': {
@@ -422,7 +427,8 @@
                     title: "本部半島（名護市・本部町・今帰仁村）",
                     description: "沖縄美ら海水族館や歴史遺跡で有名です。海洋生物好きや歴史愛好家には必見のエリアです。"
                 },
-                spots: ['churaumi-aquarium', 'kouri-island', 'nakijin-castle', 'bise-fukugi'],
+                // 美ら海水族館 → フクギ並木 → 古宇利島 → 今帰仁城
+                spots: ['churaumi-aquarium', 'bise-fukugi', 'kouri-island', 'nakijin-castle'],
                 image: "https://images.unsplash.com/photo-1566423479211-1b1bb46d559b?ixlib=rb-1.2.1&auto=format&fit=crop&w=800&q=80"
             },
             'north-resorts': {
@@ -432,7 +438,7 @@
                 },
                 ja: {
                     title: "北部リゾート（読谷村・恩納村）",
-                    description: "高級リゾート、美しいサンゴ礁、素晴らしいシュノーケリングスポットが特徴です。高級施設を備えたリラックスできるビーチバケーションに最適です。"
+                    description: "高級リゾート、美しいサンゴ礁、素晴らしいシュノーケリングスポットが特徴です。高級施設を備えたリラックスできるビーチバケーショ���に最適です。"
                 },
                 spots: ['manza-beach', 'busena-marine-park', 'zampa-misaki', 'oist-campus'],
                 image: "https://images.unsplash.com/photo-1581256309857-f422f362a0f9?ixlib=rb-1.2.1&auto=format&fit=crop&w=800&q=80"
@@ -446,7 +452,8 @@
                     title: "中部（沖縄市・うるま市・中城村）",
                     description: "歴史的な遺跡や伝統的な村、活気ある都市生活がある沖縄の文化的中心地です。独特の琉球文化を体験できます。"
                 },
-                spots: ['koza', 'american-village', 'ala-beach', 'kaichu-road'],
+                // 海中道路 → コザ → アメリカンビレッジ → アラビーチ
+                spots: ['kaichu-road', 'koza', 'american-village', 'ala-beach'],
                 image: "https://images.unsplash.com/photo-1553826059-7a090c4bd362?ixlib=rb-1.2.1&auto=format&fit=crop&w=800&q=80"
             },
             'naha': {
@@ -470,7 +477,8 @@
                     title: "南部（糸満市・南城市）",
                     description: "平和記念公園、息をのむような海岸線、ユニークなビーチが特徴の地域です。重要な史跡と自然美が組み合わさっています。"
                 },
-                spots: ['peace-memorial-park', 'chinen-misaki', 'mibaru-beach', 'okinawa-world'],
+                // 平和祈念公園 → 知念岬 → おきなわワールド → 米原ビーチ
+                spots: ['peace-memorial-park', 'chinen-misaki', 'okinawa-world', 'mibaru-beach'],
                 image: "https://images.unsplash.com/photo-1581256309857-f422f362a0f9?ixlib=rb-1.2.1&auto=format&fit=crop&w=800&q=80"
             }
         };
@@ -493,21 +501,6 @@
                 },
                 image: "https://images.unsplash.com/photo-1505228395891-9a51e7e86bf6?ixlib=rb-1.2.1&auto=format&fit=crop&w=800&q=80"
             },
-            'taa-falls': {
-                en: {
-                    name: "Taa Falls",
-                    type: "Waterfall",
-                    description: "A beautiful waterfall in the Yanbaru forest, accessible via a scenic hiking trail. The surrounding lush vegetation creates a serene atmosphere.",
-                    tips: "Wear proper hiking shoes as the trail can be slippery after rain."
-                },
-                ja: {
-                    name: "ター滝",
-                    type: "滝",
-                    description: "ヤンバルの森にある美しい滝で、風光明媚なハイキングコースでアクセスできます。周囲の緑豊かな植物が静かな雰囲気を作り出しています。",
-                    tips: "雨の後は道が滑りやすいので、適切なハイキングシューズを履きましょう。"
-                },
-                image: "https://images.unsplash.com/photo-1581256309857-f422f362a0f9?ixlib=rb-1.2.1&auto=format&fit=crop&w=800&q=80"
-            },
             'daisekirinzan': {
                 en: {
                     name: "Daisekirinzan",
@@ -522,6 +515,21 @@
                     tips: "遊歩道は約60-90分かかります - 快適な靴を履きましょう。"
                 },
                 image: "https://images.unsplash.com/photo-1470114716159-e389f8712fda?ixlib=rb-1.2.1&auto=format&fit=crop&w=800&q=80"
+            },
+            'taa-falls': {
+                en: {
+                    name: "Taa Falls",
+                    type: "Waterfall",
+                    description: "A beautiful waterfall in the Yanbaru forest, accessible via a scenic hiking trail. The surrounding lush vegetation creates a serene atmosphere.",
+                    tips: "Wear proper hiking shoes as the trail can be slippery after rain."
+                },
+                ja: {
+                    name: "ター滝",
+                    type: "滝",
+                    description: "ヤンバルの森にある美しい滝で、風光明媚なハイキングコースでアクセスできます。周囲の緑豊かな植物が静かな雰囲気を作り出しています。",
+                    tips: "雨の後は道が滑りやすいので、適切なハイキングシューズを履きましょう。"
+                },
+                image: "https://images.unsplash.com/photo-1581256309857-f422f362a0f9?ixlib=rb-1.2.1&auto=format&fit=crop&w=800&q=80"
             },
             'yambaru-wildlife': {
                 en: {
@@ -555,6 +563,21 @@
                 },
                 image: "https://images.unsplash.com/photo-1560275619-4662e36fa65c?ixlib=rb-1.2.1&auto=format&fit=crop&w=800&q=80"
             },
+            'bise-fukugi': {
+                en: {
+                    name: "Bise Fukugi Tree Road",
+                    type: "Scenic Walk",
+                    description: "A picturesque 1km road lined with ancient Fukugi trees, some over 300 years old. The path leads to beautiful secluded beaches.",
+                    tips: "Best visited in early morning or late afternoon for beautiful light and fewer people."
+                },
+                ja: {
+                    name: "備瀬のフクギ並木",
+                    type: "風景散歩道",
+                    description: "300年以上の歴史を持つ古いフクギの木が並ぶ1kmの風光明媚な道路です。道は美しい人里離れたビーチに通じています。",
+                    tips: "美しい光と少ない人混みを楽しむには、早朝または夕方に訪れるのがベストです。"
+                },
+                image: "https://images.unsplash.com/photo-1519046904884-53103b34b206?ixlib=rb-1.2.1&auto=format&fit=crop&w=800&q=80"
+            },
             'kouri-island': {
                 en: {
                     name: "Kouri Island",
@@ -584,21 +607,6 @@
                     tips: "桜の季節（1月下旬から2月上旬）に訪れると、壮観な景色を見られます。"
                 },
                 image: "https://images.unsplash.com/photo-1544551763-46a013bb70d5?ixlib=rb-1.2.1&auto=format&fit=crop&w=800&q=80"
-            },
-            'bise-fukugi': {
-                en: {
-                    name: "Bise Fukugi Tree Road",
-                    type: "Scenic Walk",
-                    description: "A picturesque 1km road lined with ancient Fukugi trees, some over 300 years old. The path leads to beautiful secluded beaches.",
-                    tips: "Best visited in early morning or late afternoon for beautiful light and fewer people."
-                },
-                ja: {
-                    name: "備瀬のフクギ並木",
-                    type: "風景散歩道",
-                    description: "300年以上の歴史を持つ古いフクギの木が並ぶ1kmの風光明媚な道路です。道は美しい人里離れたビーチに通じています。",
-                    tips: "美しい光と少ない人混みを楽しむには、早朝または夕方に訪れるのがベストです。"
-                },
-                image: "https://images.unsplash.com/photo-1519046904884-53103b34b206?ixlib=rb-1.2.1&auto=format&fit=crop&w=800&q=80"
             },
             
             // North-Central spots
@@ -664,6 +672,21 @@
             },
             
             // Central spots
+            'kaichu-road': {
+                en: {
+                    name: "Kaichu Road (Ocean Road)",
+                    type: "Scenic Drive",
+                    description: "A beautiful 4.7km causeway connecting the main island to Henza Island, with stunning ocean views on both sides. Several small islands along the way to explore.",
+                    tips: "Stop at the rest areas to enjoy the view and try local snacks from vendors."
+                },
+                ja: {
+                    name: "海中道路",
+                    type: "風景ドライブ",
+                    description: "本島と平安座島を結ぶ美しい4.7kmの堤防道路で、両側に素晴らしい海の景色が広がります。途中には探索できる小さな島がいくつかあります。",
+                    tips: "休憩所に停車して景色を楽しみ、地元の露店でスナックを試してみましょう。"
+                },
+                image: "https://images.unsplash.com/photo-1470114716159-e389f8712fda?ixlib=rb-1.2.1&auto=format&fit=crop&w=800&q=80"
+            },
             'koza': {
                 en: {
                     name: "Koza (Okinawa City)",
@@ -688,7 +711,7 @@
                 },
                 ja: {
                     name: "アメリカンビレッジ",
-                    type: "ショッピング/エンターテインメント",
+                    type: "ショッピング/エンタ��テインメント",
                     description: "アメリカンをテーマにしたカラフルなショッピング・エンターテインメント複合施設で、レストラン、ショップ、観覧車があります。お土産や夜のエンターテインメントに最適です。",
                     tips: "ライトアップされてロマンチックな雰囲気になる夜間に訪れましょう。"
                 },
@@ -708,21 +731,6 @@
                     tips: "週末は混雑する可能性があるので、より静かな体験をしたいなら平日に訪れましょう。"
                 },
                 image: "https://images.unsplash.com/photo-1506477331477-33d5d8b3dc85?ixlib=rb-1.2.1&auto=format&fit=crop&w=800&q=80"
-            },
-            'kaichu-road': {
-                en: {
-                    name: "Kaichu Road (Ocean Road)",
-                    type: "Scenic Drive",
-                    description: "A beautiful 4.7km causeway connecting the main island to Henza Island, with stunning ocean views on both sides. Several small islands along the way to explore.",
-                    tips: "Stop at the rest areas to enjoy the view and try local snacks from vendors."
-                },
-                ja: {
-                    name: "海中道路",
-                    type: "風景ドライブ",
-                    description: "本島と平安座島を結ぶ美しい4.7kmの堤防道路で、両側に素晴らしい海の景色が広がります。途中には探索できる小さな島がいくつかあります。",
-                    tips: "休憩所に停車して景色を楽しみ、地元の露店でスナックを試してみましょう。"
-                },
-                image: "https://images.unsplash.com/photo-1470114716159-e389f8712fda?ixlib=rb-1.2.1&auto=format&fit=crop&w=800&q=80"
             },
             
             // Naha spots
@@ -818,21 +826,6 @@
                 },
                 image: "https://images.unsplash.com/photo-1505228395891-9a51e7e86bf6?ixlib=rb-1.2.1&auto=format&fit=crop&w=800&q=80"
             },
-            'mibaru-beach': {
-                en: {
-                    name: "Mibaru Beach",
-                    type: "Unique Beach",
-                    description: "Beautiful beach with unique 'star sand' made from tiny star-shaped fossils of marine organisms. The sand is said to bring good luck.",
-                    tips: "Look closely at the sand - the star shapes are actually fossils of tiny organisms!"
-                },
-                ja: {
-                    name: "米原ビーチ",
-                    type: "ユニークなビーチ",
-                    description: "星の砂と呼ばれる星形の微小な海洋生物の化石がある美しいビーチです。この砂は幸運をもたらすと言われています。",
-                    tips: "砂をよく見てみましょう - 星の形は実際には微小な生物の化石です！"
-                },
-                image: "https://images.unsplash.com/photo-1506477331477-33d5d8b3dc85?ixlib=rb-1.2.1&auto=format&fit=crop&w=800&q=80"
-            },
             'okinawa-world': {
                 en: {
                     name: "Okinawa World",
@@ -847,6 +840,21 @@
                     tips: "入場料に含まれる伝統的なエイサー舞踊のパフォーマンスを見ましょう。"
                 },
                 image: "https://images.unsplash.com/photo-1527631746610-bca00a040d60?ixlib=rb-1.2.1&auto=format&fit=crop&w=800&q=80"
+            },
+            'mibaru-beach': {
+                en: {
+                    name: "Mibaru Beach",
+                    type: "Unique Beach",
+                    description: "Beautiful beach with unique 'star sand' made from tiny star-shaped fossils of marine organisms. The sand is said to bring good luck.",
+                    tips: "Look closely at the sand - the star shapes are actually fossils of tiny organisms!"
+                },
+                ja: {
+                    name: "米原ビーチ",
+                    type: "ユニークなビーチ",
+                    description: "星の砂と呼ばれる星形の微小な海洋生物の化石がある美しいビーチです。この砂は幸運をもたらすと言われています。",
+                    tips: "砂をよく見てみましょう - 星の形は実際には微小な生物の化石です！"
+                },
+                image: "https://images.unsplash.com/photo-1506477331477-33d5d8b3dc85?ixlib=rb-1.2.1&auto=format&fit=crop&w=800&q=80"
             }
         };
 
