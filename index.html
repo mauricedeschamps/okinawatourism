@@ -4,27 +4,6 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Okinawa Travel Guide</title>
-
-<!-- ホーム画面アイコン用メタタグ -->
-    <link rel="apple-touch-icon" href="data:image/svg+xml,<svg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 100 100'><rect width='100' height='100' fill='%230066cc'/><path d='M50 10L60 30L80 35L65 50L70 70L50 60L30 70L35 50L20 35L40 30Z' fill='white'/></svg>">
-    <meta name="apple-mobile-web-app-capable" content="yes">
-    <meta name="apple-mobile-web-app-status-bar-style" content="black-translucent">
-    <style>
-        :root {
-            --bg-color: #ffffff;
-            --text-color: #333333;
-            --primary-color: #0066cc;
-            --secondary-color: #e6f2ff;
-            --card-bg: #f8f9fa;
-            --border-color: #dee2e6;
-            --area-1: #ff6b6b;
-            --area-2: #4ecdc4;
-            --area-3: #45b7d1;
-            --area-4: #ffbe0b;
-            --area-5: #ff9f1c;
-            --area-6: #ee4266;
-        }
-
     <style>
         :root {
             --bg-color: #ffffff;
@@ -418,93 +397,6 @@
         <div class="english">Contact me<br><a href="mailto:mementomorikatsu@gmail.com">mementomorikatsu@gmail.com</a></div>
         <div class="japanese">連絡先<br><a href="mailto:mementomorikatsu@gmail.com">mementomorikatsu@gmail.com</a></div>
     </footer>
-
-    <script>
-        // Area information in both languages
-        const areaInfo = {
-            'yanbaru': {
-                en: {
-                    title: "Yanbaru Region",
-                    description: "The northern jungle area of Okinawa, known for its rich biodiversity and beautiful nature spots."
-                },
-                ja: {
-                    title: "ヤンバル地域",
-                    description: "沖縄北部のジャングル地帯で、豊かな生物多様性と美しい自然スポットで知られています。"
-                },
-                // 辺戸岬 → 大石林山 → ター滝 → やんばる野生生物
-                spots: ['cape-hedo', 'daisekirinzan', 'taa-falls', 'yambaru-wildlife'],
-                image: "https://images.unsplash.com/photo-1621570351214-9b612c1a8d6f?ixlib=rb-1.2.1&auto=format&fit=crop&w=800&q=80"
-            },
-            'motobu': {
-                en: {
-                    title: "Motobu Peninsula",
-                    description: "Famous for the Okinawa Churaumi Aquarium and historical sites."
-                },
-                ja: {
-                    title: "本部半島",
-                    description: "沖縄美ら海水族館や歴史遺跡で有名です。"
-                },
-                // 美ら海水族館 → フクギ並木 → 古宇利島 → 今帰仁城
-                spots: ['churaumi-aquarium', 'bise-fukugi', 'kouri-island', 'nakijin-castle'],
-                image: "https://images.unsplash.com/photo-1566423479211-1b1bb46d559b?ixlib=rb-1.2.1&auto=format&fit=crop&w=800&q=80"
-            },
-            'north-resorts': {
-                en: {
-                    title: "North Resorts",
-                    description: "Luxury resorts, beautiful coral reefs, and excellent snorkeling spots."
-                },
-                ja: {
-                    title: "北部リゾート",
-                    description: "高級リゾート、美しいサンゴ礁、素晴らしいシュノーケリングスポットが特徴です。"
-                },
-                spots: ['manza-beach', 'busena-marine-park', 'zampa-misaki', 'oist-campus'],
-                image: "https://images.unsplash.com/photo-1581256309857-f422f362a0f9?ixlib=rb-1.2.1&auto=format&fit=crop&w=800&q=80"
-            },
-            'central': {
-                en: {
-                    title: "Central Region",
-                    description: "Cultural heart of Okinawa with historical sites and vibrant city life."
-                },
-                ja: {
-                    title: "中部",
-                    description: "歴史的な遺跡や活気ある都市生活がある沖縄の文化的中心地です。"
-                },
-                // 海中道路 → コザ → アメリカンビレッジ → アラビーチ
-                spots: ['kaichu-road', 'koza', 'american-village', 'ala-beach'],
-                image: "https://images.unsplash.com/photo-1553826059-7a090c4bd362?ixlib=rb-1.2.1&auto=format&fit=crop&w=800&q=80"
-            },
-            'naha': {
-                en: {
-                    title: "Naha Area",
-                    description: "The capital city with shopping, dining, and historical sites."
-                },
-                ja: {
-                    title: "那覇周辺",
-                    description: "歴史的建造物、ショッピング、飲食店がある県都です。"
-                },
-                spots: ['kokusai-street', 'shuri-castle', 'kerama-islands', 'tomari-ichiba'],
-                image: "https://images.unsplash.com/photo-1570586793459-8a1c62b7a3f8?ixlib=rb-1.2.1&auto=format&fit=crop&w=800&q=80"
-            },
-            'southern': {
-                en: {
-                    title: "Southern Region",
-                    description: "Peace memorial parks and stunning coastal views."
-                },
-                ja: {
-                    title: "南部",
-                    description: "平和記念公園と息をのむような海岸線が特徴です。"
-                },
-                // 平和祈念公園 → 知念岬 → おきなわワールド → 米原ビーチ
-                spots: ['peace-memorial-park', 'chinen-misaki', 'okinawa-world', 'mibaru-beach'],
-                image: "https://images.unsplash.com/photo-1581256309857-f422f362a0f9?ixlib=rb-1.2.1&auto=format&fit=crop&w=800&q=80"
-            }
-        };
-
-        // Spot information (順序のみ変更、内容は同じ)
-        const spotInfo = {
-            /* 各スポット情報は以前と同じ（順序のみ変更） */
-        };
-
 
     <script>
         // Area information in both languages
